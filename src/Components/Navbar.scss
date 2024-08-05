@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Slidebar.css */
+.slidebar {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #000080;
+    color: white;
+    transition: left 0.3s ease;
+}
+
+.slidebar.open {
+    left: 0;
+}
+
+.toggle-btn {
+    position: absolute;
+    top: 0px;
+    right: -60px;
+    background-color: #0000a0;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: right 0.3s ease;
+}
+
+.slidebar.open .toggle-btn {
+    top: 0px;
+    right: -49px;
+    color: black;
+}
+
+.slidebar-content {
+    padding: 20px;
+}
+
+.slidebar-content ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.slidebar-content ul li {
+    padding: 10px 0;
+}
+
+.slidebar-content ul li:hover {
+    background-color: white;
+    color: black;
+    border-radius: 3px;
+    padding-left: 10px;
+    cursor: pointer;
+}
